@@ -22,7 +22,7 @@ ENV LD_LIBRARY_PATH /usr/lib/oracle/12.1/client64/lib
 RUN ldconfig
 
 # Install Python Packages
-RUN pip install requests cx_oracle sqlalchemy flask
+RUN pip install requests cx_oracle sqlalchemy flask tweepy
 
 VOLUME ["/data"]
 WORKDIR /data
